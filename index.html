@@ -1,78 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-        <meta charset="UTF8">
-        <meta http-equiv="X-UA-Comptible" content="IE=eage">
-        <meta name="viewport" content="width=device=width, intial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Calculator | CatKub</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Project By Matter Devs</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-       
-       <div class="wrapper">
-           <section class="screen">
-               0
-           </section>
-           <section class="calc-buttons-row">
-               <button class=clac-button double>
-                   C
-               </button>
-               <button class=clac-button double>
-                   &larr;
-               </button>
-                <button class=clac-button double>
-                   &divide;
-               </button>
-       </div>
-         <section class="calc-buttons-row">
-              <button class=clac-button double>
-                   7
-               </button>
-               <button class=clac-button double>
-                   8
-               </button>
-                <button class=clac-button double>
-                   9
-               </button>
-                <button class=clac-button double>
-                   &times;
-               </button>
-       </div>
-        <section class="class-buttons-row">
-             <button class=clac-button double>
-                   4
-               </button>
-             <button class=clac-button double>
-                   5
-               </button>    
-                <button class=clac-button double>
-                   6
-               </button>
-                <button class=clac-button double>
-                   &minus;
-               </button>
-       </div>
-       <section class="class-buttons-row">
-            <button class=clac-button double>
-                   1
-               </button>
-                <button class=clac-button double>
-                   2
-               </button>
-                <button class=clac-button double>
-                   3
-               </button>
-                <button class=clac-button double>
-                   &plus;
-               </button>
-       </div>
-       <section class="class-buttons-row">
-            <button class=clac-button double>
-                   0
-               </button>
-                <button class=clac-button double>
-                   &equals;
-               </button>
-           </section>
+    <div class="wrapper">
+        <h3>Calculator Project <sub>By Matter Devs</sub></h3>
+        <section class="screen">
+            <div class="previous" data-operand-previous></div>
+            <div class="current" data-operand-current></div>
+        </section>
+        <section class="calc-btn-row">
+            <div class="calc_btn_row">
+                <button class="calc_btn double" data-all-clear>C</button>
+                <button class="calc_btn" data-delete>←</button>
+                <button class="calc_btn" data-operation>÷</button>
+            </div>
+            <div class="calc_btn_row">
+                <button class="calc_btn" data-number>7</button>
+                <button class="calc_btn" data-number>8</button>
+                <button class="calc_btn" data-number>9</button>
+                <button class="calc_btn" data-operation>x</button>
+            </div>
+            <div class="calc_btn_row">
+                <button class="calc_btn" data-number>4</button>
+                <button class="calc_btn" data-number>5</button>
+                <button class="calc_btn" data-number>6</button>
+                <button class="calc_btn" data-operation>-</button>
+            </div>
+            <div class="calc_btn_row">
+                <button class="calc_btn" data-number>1</button>
+                <button class="calc_btn" data-number>2</button>
+                <button class="calc_btn" data-number>3</button>
+                <button class="calc_btn" data-operation>+</button>
+            </div>
+            <div class="calc_btn_row">
+                <button class="calc_btn double" data-number>0</button>
+                <button class="calc_btn" data-number>.</button>
+                <button class="calc_btn" data-equals>=</button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
 </body>
-       </html>
+
+</html>
